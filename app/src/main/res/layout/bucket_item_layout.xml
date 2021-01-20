@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="9dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="3dp"
+    app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="9dp">
+
+        <CheckBox
+            android:id="@+id/bucketCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#5A1515"
+            android:checked="true"
+            android:textSize="16dp"
+            tool:text='Testing Item' />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/bucketCheckbox"
+            android:layout_alignRight="@+id/bucketCheckbox"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="205dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toEndOf="@+id/bucketCheckbox"
+            android:layout_toRightOf="@+id/bucketCheckbox"
+            android:layout_centerVertical="true"
+            android:padding="0px"
+            android:paddingTop="20dp"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            app:backgroundTint="@color/maroon" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
